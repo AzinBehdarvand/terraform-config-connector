@@ -1,0 +1,7 @@
+apiVersion: storage.cnrm.cloud.google.com/v1beta1
+kind: StorageBucket
+metadata:
+  name: demo-kcc-bucket
+spec:
+  location: EU
+  uniformBucketLevelAccess: true

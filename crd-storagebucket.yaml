@@ -1,0 +1,26 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: storagebuckets.storage.cnrm.cloud.google.com
+spec:
+  group: storage.cnrm.cloud.google.com
+  names:
+    kind: StorageBucket
+    plural: storagebuckets
+    singular: storagebucket
+  scope: Cluster
+  versions:
+    - name: v1beta1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                location:
+                  type: string
+                uniformBucketLevelAccess:
+                  type: boolean

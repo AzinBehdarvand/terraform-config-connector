@@ -1,0 +1,18 @@
+{
+    "apiVersion": "storage.cnrm.cloud.google.com/v1beta1",
+    "kind": "StorageBucket",
+    "metadata": {
+        "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"storage.cnrm.cloud.google.com/v1beta1\",\"kind\":\"StorageBucket\",\"metadata\":{\"annotations\":{},\"name\":\"demo-kcc-bucket\"},\"spec\":{\"location\":\"EU\",\"uniformBucketLevelAccess\":true}}\n"
+        },
+        "creationTimestamp": "2025-04-15T18:35:51Z",
+        "generation": 1,
+        "name": "demo-kcc-bucket",
+        "resourceVersion": "107001",
+        "uid": "d44f25be-f6a3-4f07-a3c2-d4f651f2e81f"
+    },
+    "spec": {
+        "location": "EU",
+        "uniformBucketLevelAccess": true
+    }
+}
